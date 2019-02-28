@@ -1,0 +1,204 @@
+.header_chi
+  padding: 0
+  margin: 0
+  z-index: 2
+  max-width: 1920px
+  .header-content
+    position: relative
+    height: 870px
+    .sl
+      height: 870px
+      background-color: #e7e7e7
+      .content_box
+        margin-top: 280px
+        color: #000
+        h2
+          font-size: 48px
+          font-family: Oxygen-Bold, Tahoma, sans-serif
+          font-weight: bold
+          text-transform: uppercase
+          letter-spacing: 0.1rem
+        p
+          font-size: 30px
+          font-weight: 300
+        .btn
+          width: 330px
+          color: #1f3399
+          font-size: 1.5rem
+          border-radius: 25px
+          background-color: inherit
+          padding: 1rem 1rem
+          margin: 20px 10px
+          text-transform: uppercase
+          position: relative
+          z-index: 999
+          border: 2px solid #1f3399
+          box-shadow: none
+          transition: 250ms ease-in background-color, 500ms ease-in color
+          &:hover
+            background-color: #ecc868
+            color: #ffffff
+            border: none
+          &:nth-last-child(2)
+            margin-left: 0
+    .sl1
+      background: url("../img/bg_1_chi.jpg") no-repeat 35%
+      background-size: cover
+      .content_box
+        width: 100%
+        max-width: 750px
+        float: right
+        margin-right: 60px
+    .sl2
+      background: url("../img/bg_2_chi.jpg") no-repeat 40%
+      background-size: cover
+      .content_box
+        width: 100%
+        max-width: 750px
+        float: right
+        margin-right: 60px
+    .sl3
+      background: url("../img/bg_3_chi.jpg") no-repeat
+      background-size: cover
+      .content_box
+        width: 100%
+        max-width: 750px
+        float: left
+        margin-left: 60px
+    .contact-menu_chi
+      position: absolute
+      top: 25px
+      right: 20px
+      margin: 0 auto
+      z-index: 99999
+      font-family: Oxygen-Bold, Tahoma, sans-serif
+      display: flex
+      justify-content: space-between
+      max-width: 500px
+      .item
+        display: flex
+        align-items: center
+        margin: 0 10px
+        .img-container
+          img
+            margin-right: 10px
+        a
+          color: #bf974d
+          text-decoration: none
+          &:hover
+            text-decoration: underline
+        ul
+          display: block
+          margin: 5px 0
+          padding: 0
+          list-style: none
+          float: left
+          &:after
+            display: block
+            content: ' '
+            clear: both
+            float: none
+          &.menu > li
+            float: left
+            position: relative
+            > a
+              display: block
+              padding: 10px
+              color: #bf974d
+              text-decoration: none
+              //&:hover
+              //  background-color: black
+          &.submenu
+            //display: none
+            visibility: hidden
+            position: absolute
+            width: 120px
+            top: 30px
+            right: 0
+            background-color: #ffffff
+            border: 1px solid #bf974d
+            transition: all 1s
+            > li
+              display: block
+              text-align: center
+              > a
+                display: block
+                padding: 10px
+                color: #bf974d
+                background-color: #ffffff
+                text-decoration: none
+                &:hover
+                  text-decoration: underline
+        ul.menu > li:hover > ul.submenu
+          //display: block
+          visibility: visible
+        .img-container
+          margin: 14px 0
+        .img-leng
+          margin: 14px 0
+    .header-menu_chi
+      position: absolute
+      top: 30px
+      left: 0
+      right: 0
+      margin: 0 auto
+      z-index: 999
+      color: #FFFFFF
+      .desktop_menu
+        font-size: 22px
+        font-family: Oxygen-Bold, Tahoma, sans-serif
+        font-weight: bold
+        float: right
+        margin: 90px 0 0
+        li
+          list-style: none
+          display: inline-block
+          padding: 0
+          margin: 0 10px
+          a
+            text-decoration: none
+            padding: 2px
+            &:hover
+              color: #ecc868
+      .burger_button
+        display: none
+        float: right
+        margin: 80px 20px 20px 20px
+        cursor: pointer
+        img
+          width: 50px
+    .mobile_menu-close
+      position: absolute
+      top: 80px
+      left: 0
+      right: 0
+      margin: 0 auto
+      padding: 20px
+      max-width: 400px
+      background-color: #262b2f
+      z-index: -2
+      visibility: hidden
+      .close
+        float: right
+        cursor: pointer
+        &:hover
+          opacity: 0.7
+      .mobile_content
+        font-size: 20px
+        z-index: -2
+        padding-left: 0
+        li
+          display: block
+          margin: 20px 0
+          text-align: center
+          a
+            text-decoration: none
+            padding: 2px
+            color: #ffffff
+            &:visited
+              color: #ecc868
+            &:hover
+              color: #ecc868
+    .mobile_menu-open
+      z-index: 9999
+      visibility: visible
